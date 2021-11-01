@@ -1,3 +1,17 @@
+```
+[2021-11-01 17:49:11] Error: Image Optimization using Next.js' default loader is not compatible with `next export`.
+[2021-11-01 17:49:11]   Possible solutions:
+[2021-11-01 17:49:11]     - Use `next start` to run a server, which includes the Image Optimization API.
+[2021-11-01 17:49:11]     - Use any provider which supports Image Optimization (like Vercel).
+[2021-11-01 17:49:11]     - Configure a third-party loader in `next.config.js`.
+[2021-11-01 17:49:11]     - Use the `loader` prop for `next/image`.
+[2021-11-01 17:49:11]   Read more: https://nextjs.org/docs/messages/export-image-api
+[2021-11-01 17:49:11]     at /root/cloudbase-workspace/node_modules/next/dist/export/index.js:256:23
+[2021-11-01 17:49:11]     at async Span.traceAsyncFn (/root/cloudbase-workspace/node_modules/next/dist/trace/trace.js:74:20)
+[2021-11-01 17:49:11]
+
+```
+
 ![tailwind-nextjs-banner](/public/static/images/twitter-card.png)
 
 # Tailwind Nextjs Starter Blog
