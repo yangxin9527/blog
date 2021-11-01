@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "blog",
+      "script": "npm",
+      "args": "run serve"
+    }
+  ]
+}
