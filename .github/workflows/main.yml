@@ -9,39 +9,39 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # 下载源码
-      - name: Checkout
-        uses: actions/checkout@master
+      # - name: Checkout
+      #   uses: actions/checkout@master
 
-      # 打包构建
-      - name: Build
-        uses: actions/setup-node@master
-      - run: npm install
-      - run: npm run build
-      - run: tar -zcvf release.tgz .next static next.config.js package.json package-lock.json pm2.config.json
+      # # 打包构建
+      # - name: Build
+      #   uses: actions/setup-node@master
+      # - run: npm install
+      # - run: npm run build
+      # - run: tar -zcvf release.tgz .next static next.config.js package.json package-lock.json pm2.config.json
 
-      # 发布 Release
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          draft: false
-          prerelease: false
+      # # 发布 Release
+      # - name: Create Release
+      #   id: create_release
+      #   uses: actions/create-release@master
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      #   with:
+      #     tag_name: ${{ github.ref }}
+      #     release_name: Release ${{ github.ref }}
+      #     draft: false
+      #     prerelease: false
 
-      # 上传构建结果到 Release
-      - name: Upload Release Asset
-        id: upload-release-asset
-        uses: actions/upload-release-asset@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./release.tgz
-          asset_name: release.tgz
-          asset_content_type: application/x-tgz
+      # # 上传构建结果到 Release
+      # - name: Upload Release Asset
+      #   id: upload-release-asset
+      #   uses: actions/upload-release-asset@master
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      #   with:
+      #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+      #     asset_path: ./release.tgz
+      #     asset_name: release.tgz
+      #     asset_content_type: application/x-tgz
 
       # 部署到服务器
       - name: Deploy
@@ -53,7 +53,9 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd /home/yxinwwwhhh/blog
-            wget https://github.com/yangxin9527/blog/releases/latest/download/release.tgz -O release.tgz
-            tar zxvf release.tgz
-            npm install --production
+            # wget https://github.com/yangxin9527/blog/releases/latest/download/release.tgz -O release.tgz
+            # tar zxvf release.tgz
+            # npm install --production
+            git pull origin main
+            npm run build
             pm2 reload pm2.config.json
