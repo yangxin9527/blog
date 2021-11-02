@@ -1,8 +1,8 @@
 name: Publish And Deploy
 on:
   push:
-    tags:
-      - 'v*'
+    # tags:
+    #   - 'v*'
 
 jobs:
   build-and-deploy:
@@ -52,7 +52,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd /root/blog
+            cd blog
             # wget https://github.com/yangxin9527/blog/releases/latest/download/release.tgz -O release.tgz
             # tar zxvf release.tgz
             # npm install --production
