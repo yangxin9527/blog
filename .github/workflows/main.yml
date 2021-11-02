@@ -53,9 +53,6 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd blog
-            # wget https://github.com/yangxin9527/blog/releases/latest/download/release.tgz -O release.tgz
-            # tar zxvf release.tgz
-            # npm install --production
             git pull origin main
             npm run build
             pm2 reload pm2.config.json

@@ -27,6 +27,12 @@ summary: 使用Tailwind、Nextjs模板快速搭建博客，但国内不能使用
 
 域名是 AWS 上申请的 12 刀一年，解析是 0.5 刀一个月，不用备案。服务器用的谷歌云，3 个月重新申请一次，相当于免费
 
+### 坑
+
+- 配置 UFW 忘记开 22 直接重启，导致连不上虚拟机了，直接重来
+- nginx 直接配置 https 好难配，直接宝塔一键操作
+- github action secrets !!! update 没用，有缓存，浪费很多时间，直接删除，重新建一个 secret
+
 ## 补充链接
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/timlrx/tailwind-nextjs-starter-blog?style=social)](https://GitHub.com/timlrx/tailwind-nextjs-starter-blog/stargazers/)
