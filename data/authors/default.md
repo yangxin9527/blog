@@ -1,10 +1,10 @@
 ---
-name: Tails Azimuth
-avatar: /static/images/avatar.png
+name: Nix
+avatar: /static/images/avatar.jpg
 occupation: Professor of Atmospheric Science
 company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
+email: 364332625@qq.com
+# twitter: https://twitter.com/Twitter
 linkedin: https://www.linkedin.com
 github: https://github.com
 ---

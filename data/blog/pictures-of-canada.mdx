@@ -1,82 +1,34 @@
 ---
-title: O Canada
-date: '2017-07-15'
-tags: ['holiday', 'canada', 'images']
+title: 搭建博客
+date: '2021-11-02'
+tags: ['博客', 'Tailwind', 'Nextjs']
 draft: false
-summary: The scenic lands of Canada featuring maple leaves, snow-capped mountains, turquoise lakes and Toronto. Take in the sights in this photo gallery exhibition and see how easy it is to replicate with some MDX magic and tailwind classes.
+summary: 使用Tailwind、Nextjs模板快速搭建博客，但国内不能使用vercel，修改为github action触发谷歌云重新生成页面。
 ---
 
-# O Canada
+# 心路历程
 
-The scenic lands of Canada featuring maple leaves, snow-capped mountains, turquoise lakes and Toronto. Take in the sights in this photo gallery exhibition and see how easy it is to replicate with some MDX magic and tailwind classes.
+本来是想试试 [Tailwind-Nextjs](https://github.com/timlrx/tailwind-nextjs-starter-blog/) 的功能，整体确实很方便，
+包括最后部署。
 
-Features images served using `next/image` component. The locally stored images are located in a folder with the following path: `/static/images/canada/[filename].jpg`
+感觉一切都 OK 的第二天，发现无法访问，才发现 vercel 在国内无法访问，于是就有了后续。
 
-Since we are using mdx, we can create a simple responsive flexbox grid to display our images with a few tailwind css classes.
+### 切到[腾讯云 webify](https://cloud.tencent.com/product/webify)
 
----
+国外的不能用，咱就用国内的，花点小钱也不碍事。直到最后一步，绑定域名，需要备案。
 
-# Gallery
+乖乖，卒！(还好没买资源包)
 
-<div className="flex flex-wrap -mx-2 overflow-hidden xl:-mx-2">
-  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
-    ![Maple](/static/images/canada/maple.jpg)
-  </div>
-  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
-    ![Lake](/static/images/canada/lake.jpg)
-  </div>
-  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
-    ![Mountains](/static/images/canada/mountains.jpg)
-  </div>
-  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
-    ![Toronto](/static/images/canada/toronto.jpg)
-  </div>
-</div>
+### 切到谷歌云
 
-# Implementation
+从头开始创建实例，上线，完美。涉及内容 https，nginx，宝塔，nextjs，tailwind，谷歌云，AWS，解析。
 
-```js
-<div className="flex flex-wrap -mx-2 overflow-hidden xl:-mx-2">
-  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
-    ![Maple](/static/images/canada/maple.jpg)
-  </div>
-  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
-    ![Lake](/static/images/canada/lake.jpg)
-  </div>
-  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
-    ![Mountains](/static/images/canada/mountains.jpg)
-  </div>
-  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
-    ![Toronto](/static/images/canada/toronto.jpg)
-  </div>
-</div>
-```
+### 费用
 
-With MDX v2, one can interleave markdown in jsx as shown in the example code.
+域名是 AWS 上申请的 12 刀一年，解析是 0.5 刀一个月，不用备案。服务器用的谷歌云，3 个月重新申请一次，相当于免费
 
-### Photo Credits
+## 补充链接
 
-<div>
-  Maple photo by [Guillaume
-  Jaillet](https://unsplash.com/@i_am_g?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
-  on
-  [Unsplash](https://unsplash.com/s/photos/canada?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
-</div>
-<div>
-  Mountains photo by [John
-  Lee](https://unsplash.com/@john_artifexfilms?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
-  on
-  [Unsplash](https://unsplash.com/s/photos/canada?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
-</div>
-<div>
-  Lake photo by [Tj
-  Holowaychuk](https://unsplash.com/@tjholowaychuk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
-  on
-  [Unsplash](https://unsplash.com/s/photos/canada?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
-</div>
-<div>
-  Toronto photo by [Matthew
-  Henry](https://unsplash.com/@matthewhenry?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
-  on
-  [Unsplash](https://unsplash.com/s/photos/canada?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
-</div>
+[![GitHub Repo stars](https://img.shields.io/github/stars/timlrx/tailwind-nextjs-starter-blog?style=social)](https://GitHub.com/timlrx/tailwind-nextjs-starter-blog/stargazers/)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/timlrx/tailwind-nextjs-starter-blog)
