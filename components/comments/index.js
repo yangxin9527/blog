@@ -46,7 +46,7 @@ const Comments = ({ frontMatter }) => {
     var gitalk = new Gitalk({
       clientID: '20ba6389d19d60888824',
       clientSecret: 'fd78f1e958843208bb2105fda8ee37a8b5b7fa22',
-      repo: 'https://github.com/yangxin9527/blog',
+      repo: 'blog',
       owner: 'yangxin9527',
       admin: ['yangxin9527'],
       id: frontMatter.slug, // Ensure uniqueness and length less than 50
