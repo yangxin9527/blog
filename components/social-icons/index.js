@@ -3,7 +3,13 @@ import Github from './github.svg'
 import Facebook from './facebook.svg'
 import Youtube from './youtube.svg'
 import Linkedin from './linkedin.svg'
+import Bilibili from './bilibili.svg'
 import Twitter from './twitter.svg'
+import YuQue from './yuque.svg'
+import Telegram from './telegram.svg'
+import ZhiHu from './zhihu.svg'
+import Wechat from './wechat.svg'
+import Qq from './qq.svg'
 
 // Icons taken from: https://simpleicons.org/
 
@@ -13,7 +19,13 @@ const components = {
   facebook: Facebook,
   youtube: Youtube,
   linkedin: Linkedin,
+  bilibili: Bilibili,
   twitter: Twitter,
+  yuque: YuQue,
+  zhihu: ZhiHu,
+  telegram: Telegram,
+  qq: Qq,
+  wechat: Wechat,
 }
 
 const SocialIcon = ({ kind, href, size = 8 }) => {

@@ -1,16 +1,18 @@
 ---
 name: Nix
 avatar: /static/images/avatar.jpg
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: 364332625@qq.com
-# twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+occupation: 前端工程师
+company: 湖北 武汉
+# email: yangheroxin@gmail.com
+github: https://github.com/yangxin9527/
+bilibili: https://space.bilibili.com/51996404
+twitter: https://twitter.com/yangheroxin
+facebook: https://facebook.com/nix.sun.china
+yuque: https://www.yuque.com/morningstar-fnspp
+zhihu: https://www.zhihu.com/people/yang-xin-87-63
+telegram: https://t.me/nix_888
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+好奇心贼重，喜欢尝试和探索未知...
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+经常会有很多划时代的想法冒出来，可是没有执行。
