@@ -44,9 +44,11 @@ export default function AuthorLayout({ children, frontMatter }) {
               <SocialIcon kind="github" href={github} />
               <SocialIcon kind="zhihu" href={zhihu} />
               <SocialIcon kind="bilibili" href={bilibili} />
+
               <SocialIcon kind="yuque" href={yuque} />
               <SocialIcon kind="facebook" href={facebook} />
               <SocialIcon kind="youtube" href={youtube} />
+
               <SocialIcon kind="twitter" href={twitter} />
               <SocialIcon kind="telegram" href={telegram} />
             </div>
