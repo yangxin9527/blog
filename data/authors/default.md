@@ -3,7 +3,7 @@ name: Nix
 avatar: /static/images/avatar.jpg
 occupation: 前端工程师
 company: 湖北 武汉
-# email: yangheroxin@gmail.com
+email: yangheroxin@gmail.com
 github: https://github.com/yangxin9527/
 bilibili: https://space.bilibili.com/51996404
 twitter: https://twitter.com/yangheroxin
