@@ -6,11 +6,11 @@ company: 湖北 武汉
 email: yangheroxin@gmail.com
 github: https://github.com/yangxin9527/
 bilibili: https://space.bilibili.com/51996404
-twitter: https://twitter.com/yangheroxin
-facebook: https://facebook.com/nix.sun.china
+# twitter: https://twitter.com/yangheroxin
+# facebook: https://facebook.com/nix.sun.china
 yuque: https://www.yuque.com/morningstar-fnspp
 zhihu: https://www.zhihu.com/people/yang-xin-87-63
-telegram: https://t.me/nix_888
+# telegram: https://t.me/nix_888
 ---
 
 好奇心贼重，喜欢尝试和探索未知...
