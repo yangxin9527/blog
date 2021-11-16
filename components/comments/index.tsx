@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import Gitalk from 'gitalk'
 import 'gitalk/dist/gitalk.css'
+import siteMetadata from '@/data/siteMetadata'
 
 interface Props {
   frontMatter: PostFrontMatter
@@ -27,14 +28,8 @@ const Comments = ({ frontMatter }: Props) => {
   // }
   useEffect(() => {
     const gitalk = new Gitalk({
-      clientID: '20ba6389d19d60888824',
-      clientSecret: 'fd78f1e958843208bb2105fda8ee37a8b5b7fa22',
-      repo: 'blog',
-      owner: 'yangxin9527',
-      admin: ['yangxin9527'],
+      ...siteMetadata.comment,
       id: frontMatter.slug, // Ensure uniqueness and length less than 50
-      language: 'zh-CN',
-      distractionFreeMode: false, // Facebook-like distraction free mode
     })
     gitalk.render('gitalk-container')
   }, [frontMatter.slug])

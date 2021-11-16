@@ -7,12 +7,14 @@
 - 国内不能使用 vercel，改用自己服务器
 - 增加 git action 自动部署
 - 评论被墙，替换为 gitalk
--
+- gitalk 配置添加到 siteMetadata
 
 ## TODO
 
-- git action 可优化，
-- gitalk 配置添加到 siteMetadata
+- 背景改为天气相关 花 太阳 雨水滴 风
+- ant motion
+- 照片墙
+- git action 可优化
 
 ### 备注
 
