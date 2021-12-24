@@ -5,8 +5,10 @@ export default function CssDoole() {
     document.addEventListener(
       'click',
       (e) => {
-        const doodle = document.querySelector('css-doodle')
-        doodle.update()
+        const doodle: any = document.querySelector('css-doodle')
+        if (doodle) {
+          doodle?.update()
+        }
       },
       []
     )
