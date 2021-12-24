@@ -2,17 +2,13 @@ import { useEffect } from 'react'
 
 export default function CssDoole() {
   useEffect(() => {
-    document.addEventListener(
-      'click',
-      (e) => {
-        const doodle: any = document.querySelector('css-doodle')
-        if (doodle) {
-          doodle?.update()
-        }
-      },
-      []
-    )
-  })
+    document.addEventListener('click', (e) => {
+      const doodle: any = document.querySelector('css-doodle')
+      if (doodle) {
+        doodle?.update()
+      }
+    })
+  }, [])
   return (
     <div>
       <css-doodle grid="5">
